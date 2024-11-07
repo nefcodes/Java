@@ -10,6 +10,8 @@ class StringFormattingExample {
     System.out.println(objectstring1 == objectstring2);
 
     // EXAMPLE OF FORMAT SPECIFIES
+// FORMAT SPECIFIES FOR, String %s, Double/Float %f, char %c, boolean %b, int %d
+    
     String text = "Example";
     int year = 2024;
     Float floatingValue = 1.5f;
