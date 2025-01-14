@@ -31,7 +31,8 @@ public class Person {
         p1.saySomething("The cats can fly.");
         p1.saySomething("Dog's can teleport.");
 
-        System.out.println(p1.getMiddleInitial());
+        char middleInitial = p1.getMiddleInitial();
+        System.out.println(middleInitial);
         System.out.println(p1.add(5, 10));
 
     }
