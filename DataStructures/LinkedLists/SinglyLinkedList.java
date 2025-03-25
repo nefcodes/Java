@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 
 // SINGLY LINKED LIST (can only traverse from head to tail)
+// No random access of element, must go through all to find an element
 public class main {
 
     public static void main(String[] args) {
