@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 
+// SINGLY LINKED LIST (can only traverse from head to tail)
 public class main {
 
     public static void main(String[] args) {
