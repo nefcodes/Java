@@ -36,6 +36,11 @@ public class main {
         System.out.println("First node: " + XlinkedList.peekFirst()); // see first node..
         System.out.println("Last node: " + XlinkedList.peekLast()); // see last node
 
+        //Adding head and tail
+        XlinkedList.addFirst("unknown");
+        XlinkedList.addLast("tail");
+
+//        Similarly you could .removeFirst()     .removeLast();
 
 
 
