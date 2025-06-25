@@ -1,6 +1,7 @@
 import java.util.HashSet;
+import java.util.Iterator; //iterates over set, just like for each loop
 
-// hashset only contains unique items
+// hashset only contains unique items, and unordered
 public class Hashset {
 
     public static void main(String[] args) {
@@ -22,6 +23,14 @@ public class Hashset {
         for(int item : hset1){
             System.out.println(item);
         }
+
+        System.out.println("hashset size is: " + hset1.size());
+
+        // iterate with iterator
+        Iterator it = hset1.iterator();
+
+        System.out.println("Next value is: " + it.next()); // first value is null by default. next could be anything at first, but then becomes normal next
+        System.out.printf("does next value exists?: " + it.hasNext());; // does next val exists? (boolean)
 
     }
 }
