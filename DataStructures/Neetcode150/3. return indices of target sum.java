@@ -4,7 +4,7 @@ Two sum problem
 Given an array of integers nums and an integer target,
 return indices of the two numbers such that they add up to target. (assuming they only have 1 solution)
 
-costs O(n) runtime, o(n) space
+costs O(n) runtime, o(n) space takes up memory...
  */
 
 import java.util.HashMap;
