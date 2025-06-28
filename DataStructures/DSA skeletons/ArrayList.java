@@ -1,6 +1,8 @@
 /*
 
     ArrayList = resizable array that stores objects (autoboxing)
+    to search sorted = O(logn) and unsorted = O(n)
+    insert / deletion = O(n)
 
  */
 
