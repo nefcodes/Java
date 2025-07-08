@@ -1,0 +1,39 @@
+/*
+Best Time to Buy and Sell Stock
+
+given array prices, prices[i] is price on ith day.
+calculate the maximum profit you can make.
+
+you can't sell before buying
+
+
+ */
+
+
+class Solution {
+    public int maxProfit(int[] prices) {
+
+        int minSoFar = prices[0]; // min stock price. price on first day
+        int ans = 0;
+
+
+        /*
+        set the minSoFar as first element, then substract the min from the current ith value
+        if at any point minSoFar less than current day price (prices[i])
+        minSoFar = min of (prices[i] or minSoFar)
+         */
+        for(int i = 1; i < prices.length; i++){ // starting from 1 index, cuz we already at 0 index
+
+            int profit = prices[i] - minSoFar;
+            if(profit > ans){
+                ans = profit;
+            }
+
+
+            minSoFar = Math.min(prices[i], minSoFar);
+
+
+        }
+        return ans;
+    }
+}
