@@ -3,6 +3,8 @@
 FIZZ BUZZ
 given integer n, write a string which has n items
 if div by 3 = Fizz, if div by 5 = Buzz, if both 3 and 5 = FizzBuzz, otherwise just the number
+
+Time Complexity o(n), Space O(1)
  */
 
 import java.util.ArrayList;
