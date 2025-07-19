@@ -30,6 +30,12 @@ class Solution {
         Set<Character>[] colSet = new HashSet[9];
         Set<Character>[] gridSet = new HashSet[9];
 
+        for(int i = 0; i<9 ; i++){
+            rowSet[i] = new HashSet<>(); // each of them are also sets, which themselves could contain unique items
+            colSet[i] = new HashSet<>();
+            gridSet[i] = new HashSet<>();
+        }
+
 
         for( int i = 0; i <9; i++){
             for(int j = 0; j <9; j++){
@@ -43,11 +49,11 @@ class Solution {
 
                     // check if row, col, grid set contains the current cell
                     boolean isPresetnInRow = rowSet[i].contains(board[i][j]);
-                    boolean isPresetnInRow = colSet[i].contains(board[i][j]);
+                    boolean isPresetnInCol = colSet[j].contains(board[i][j]);
                     boolean isPresetnInGridSet = gridSet[gridNo].contains(board[i][j]);
 
                     //if current cell present in any one, then its invalid sudoku
-                    if(isPresetnInGridSet || isPresetnInRow || isPresetnInGridSet){
+                    if(isPresetnInGridSet || isPresetnInRow || isPresetnInCol){
                         return false;
                     }
 
