@@ -1,5 +1,5 @@
 /*
-Given an integer array nums, find the subarray with the largest sum, and return its sum.
+Given an integer array nums, find the subarray without breaks having the largest sum, and return its sum.
 
 a sequence [a1, a2, a3, a4....]
 
