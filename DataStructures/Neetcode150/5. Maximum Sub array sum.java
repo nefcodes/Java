@@ -17,7 +17,7 @@ class Solution {
         int maxYet = nums[0]; // set to first item
         int currentSum = nums[0];
 
-        // iterating from 1, bcz we already covered 0th element
+        // iterating from 1, bcz we already covered 0th element as initial currentSum[0]
         for (int i = 1; i < nums.length; i++){
  
             //house keeping
