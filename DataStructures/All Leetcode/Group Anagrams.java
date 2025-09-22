@@ -1,37 +1,3 @@
-
-Example 1:
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-
-Given a list of strings, return array of array of string
-
-Anagram: two strings having exact same characters but jumbled.
-
-Checking if anagram: if sorting them both gives the same string
-
-Approach: record original order if sorted version of it matches with sorted "key", if not then record it as key.
-Then create a new array.
-
-Solution:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
 
